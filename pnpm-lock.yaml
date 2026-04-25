@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       next:
-        specifier: https://github.com/Mark-Lasfar/next.js/releases/download/v16.2.1-canary.35-draftmode-fix/next-16.2.1-canary.34.tgz
-        version: https://github.com/Mark-Lasfar/next.js/releases/download/v16.2.1-canary.35-draftmode-fix/next-16.2.1-canary.34.tgz(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: https://github.com/Mark-Lasfar/next.js/releases/download/v16.2.1-canary.36-draftmode-fix/next-16.2.1-canary.34.tgz
+        version: https://github.com/Mark-Lasfar/next.js/releases/download/v16.2.1-canary.36-draftmode-fix/next-16.2.1-canary.34.tgz(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -231,8 +231,8 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  next@https://github.com/Mark-Lasfar/next.js/releases/download/v16.2.1-canary.35-draftmode-fix/next-16.2.1-canary.34.tgz:
-    resolution: {integrity: sha512-XZNDI2iOAkiWKrq6O+h8irLAOK5hw4hXu/gUwOGdZSevl4kG59xuki6lcydOakU9xh17qX64zVbLLcnOZDLu7A==, tarball: https://github.com/Mark-Lasfar/next.js/releases/download/v16.2.1-canary.35-draftmode-fix/next-16.2.1-canary.34.tgz}
+  next@https://github.com/Mark-Lasfar/next.js/releases/download/v16.2.1-canary.36-draftmode-fix/next-16.2.1-canary.34.tgz:
+    resolution: {integrity: sha512-pAedtPQHXHydeOVGOZzUNn7Jm+FlLCmQrIFJ4cr7To/W/Wy+ZEo2hD9mOcN1sMDuLN0sx82XW0HnAB/3DZvXrg==, tarball: https://github.com/Mark-Lasfar/next.js/releases/download/v16.2.1-canary.36-draftmode-fix/next-16.2.1-canary.34.tgz}
     version: 16.2.1-canary.34
     engines: {node: '>=20.9.0'}
     hasBin: true
@@ -449,7 +449,7 @@ snapshots:
 
   nanoid@3.3.11: {}
 
-  next@https://github.com/Mark-Lasfar/next.js/releases/download/v16.2.1-canary.35-draftmode-fix/next-16.2.1-canary.34.tgz(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  next@https://github.com/Mark-Lasfar/next.js/releases/download/v16.2.1-canary.36-draftmode-fix/next-16.2.1-canary.34.tgz(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       '@next/env': 16.2.1-canary.34
       '@swc/helpers': 0.5.15
