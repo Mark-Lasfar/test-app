@@ -8,7 +8,7 @@ export default async function Home({
 }) {
   const draft = await draftMode();
   let params = undefined;
-
+  
   if (draft.isEnabled) {
     params = await searchParams;
     console.log("In draft mode with search params: ", params);
