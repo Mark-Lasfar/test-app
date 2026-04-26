@@ -6,7 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "https://github.com/Mark-Lasfar/next.js/releases/download/v16.2.1-canary.36-draftmode-fix/next-16.2.1-canary.34.tgz",
+    "next": "https://github.com/Mark-Lasfar/next.js/releases/download/v16.2.1-canary.37-draftmode-fix/next-16.2.1-canary.34.tgz",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
