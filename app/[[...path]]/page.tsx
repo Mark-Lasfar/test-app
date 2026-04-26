@@ -1,7 +1,5 @@
 import { draftMode } from "next/headers";
 
-export const dynamic = 'force-dynamic'
-
 /** Add your relevant code here for the issue to reproduce */
 export default async function Home({
   searchParams,

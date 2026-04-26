@@ -232,7 +232,7 @@ packages:
     hasBin: true
 
   next@https://github.com/Mark-Lasfar/next.js/releases/download/v16.2.1-canary.38-draftmode-fix/next-16.2.1-canary.34.tgz:
-    resolution: {integrity: sha512-PymHAgyIzFNwvJLwtQvWMv6n3dMy8rn7eCdqpFrpe3U723KKXQKNv0I3Rg+7ZUEn/y6ruuHmdRsAsVJxg1ddEw==, tarball: https://github.com/Mark-Lasfar/next.js/releases/download/v16.2.1-canary.38-draftmode-fix/next-16.2.1-canary.34.tgz}
+    resolution: {tarball: https://github.com/Mark-Lasfar/next.js/releases/download/v16.2.1-canary.38-draftmode-fix/next-16.2.1-canary.34.tgz}
     version: 16.2.1-canary.34
     engines: {node: '>=20.9.0'}
     hasBin: true
