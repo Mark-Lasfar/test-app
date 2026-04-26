@@ -9,15 +9,11 @@ export default async function Home({
   const draft = await draftMode();
   let params = undefined;
 
-  console.log("🔍 RAW searchParams promise:", searchParams);
-
   if (draft.isEnabled) {
     params = await searchParams;
-    console.log("✅ In draft mode with search params: ", params);
+    console.log("In draft mode with search params: ", params);
   } else {
-    console.log("❌ Not in draft mode");
-    const testParams = await searchParams;
-    console.log("🔍 Search params without draft mode:", testParams);
+    console.log("Not in draft mode");
   }
 
   return (

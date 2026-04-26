@@ -6,13 +6,13 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "canary",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "next": "https://github.com/Mark-Lasfar/next.js/releases/download/v16.2.1-canary.36-draftmode-fix/next-16.2.1-canary.34.tgz",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@types/node": "^22",
-    "@types/react": "^19",
+    "@types/react": "^18",
     "typescript": "^5"
   },
   "packageManager": "pnpm@10.33.0+sha512.10568bb4a6afb58c9eb3630da90cc9516417abebd3fabbe6739f0ae795728da1491e9db5a544c76ad8eb7570f5c4bb3d6c637b2cb41bfdcdb47fa823c8649319"
