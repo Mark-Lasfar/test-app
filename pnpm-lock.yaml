@@ -25,8 +25,8 @@ importers:
         specifier: ^19
         version: 19.2.14
       '@vercel/next':
-        specifier: https://github.com/Mark-Lasfar/vercel/releases/download/v4.16.8-vercel-draftmode-fix/vercel-next-4.16.8.tgz
-        version: https://github.com/Mark-Lasfar/vercel/releases/download/v4.16.8-vercel-draftmode-fix/vercel-next-4.16.8.tgz
+        specifier: https://github.com/Mark-Lasfar/vercel/releases/download/v4.16.9-draftmode-fix/vercel-next-4.16.8.tgz
+        version: https://github.com/Mark-Lasfar/vercel/releases/download/v4.16.9-draftmode-fix/vercel-next-4.16.8.tgz
       typescript:
         specifier: ^5
         version: 5.9.3
@@ -222,8 +222,8 @@ packages:
   '@types/react@19.2.14':
     resolution: {integrity: sha512-ilcTH/UniCkMdtexkoCN0bI7pMcJDvmQFPvuPvmEaYA/NSfFTAgdUSLAoVjaRJm7+6PvcM+q1zYOwS4wTYMF9w==}
 
-  '@vercel/next@https://github.com/Mark-Lasfar/vercel/releases/download/v4.16.8-vercel-draftmode-fix/vercel-next-4.16.8.tgz':
-    resolution: {integrity: sha512-pvMaeuJvQlXn/A/iEMOeNi+6hA6aGCdGkPNdWOHMRVbEHThbGyIYy9d1+O094Ud2rxFt8ZuVAl766GxId/edzg==, tarball: https://github.com/Mark-Lasfar/vercel/releases/download/v4.16.8-vercel-draftmode-fix/vercel-next-4.16.8.tgz}
+  '@vercel/next@https://github.com/Mark-Lasfar/vercel/releases/download/v4.16.9-draftmode-fix/vercel-next-4.16.8.tgz':
+    resolution: {integrity: sha512-6hs+S/5Z+xf5h+Tcb3TlBGu8tgc82pdxe3ug0kSXF9pekIjqNE+2vkWnxUoLjiaZs+sK1LNCsbp92MymsUKQSw==, tarball: https://github.com/Mark-Lasfar/vercel/releases/download/v4.16.9-draftmode-fix/vercel-next-4.16.8.tgz}
     version: 4.16.8
 
   '@vercel/nft@1.5.0':
@@ -607,7 +607,7 @@ snapshots:
     dependencies:
       csstype: 3.2.3
 
-  '@vercel/next@https://github.com/Mark-Lasfar/vercel/releases/download/v4.16.8-vercel-draftmode-fix/vercel-next-4.16.8.tgz':
+  '@vercel/next@https://github.com/Mark-Lasfar/vercel/releases/download/v4.16.9-draftmode-fix/vercel-next-4.16.8.tgz':
     dependencies:
       '@vercel/nft': 1.5.0
     transitivePeerDependencies:
