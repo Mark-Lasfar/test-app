@@ -1,20 +1,30 @@
-import { draftMode } from "next/headers";
+import { draftMode, headers } from "next/headers";
 
-/** Add your relevant code here for the issue to reproduce */
 export default async function Home({
   searchParams,
 }: {
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
   const draft = await draftMode();
-  let params = undefined;
-  
-  if (draft.isEnabled) {
-    params = await searchParams;
-    console.log("In draft mode with search params: ", params);
-  } else {
-    console.log("Not in draft mode");
-  }
+  const h = await headers();
+
+  const params = await searchParams;
+
+  console.log("====================================");
+  console.log("DRAFT MODE:", draft.isEnabled);
+
+  // Next.js parsed query
+  console.log("SEARCH PARAMS (Next):", params);
+
+  // Raw request info
+  console.log("RAW HOST:", h.get("host"));
+  console.log("RAW URL HEADER (x-url):", h.get("x-url"));
+  console.log("FORWARDED URI:", h.get("x-forwarded-uri"));
+  console.log("FORWARDED QUERY:", h.get("x-forwarded-query"));
+
+  console.log("HAS QUERY KEYS:", Object.keys(params || {}).length);
+
+  console.log("====================================");
 
   return (
     <div>
@@ -26,11 +36,7 @@ export default async function Home({
 
 export const generateStaticParams = async () => {
   return [
-    {
-      path: [],
-    },
-    {
-      path: ["test"],
-    },
+    { path: [] },
+    { path: ["test"] },
   ];
 };
