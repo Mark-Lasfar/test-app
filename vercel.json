@@ -5,7 +5,7 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "htthttps://github.com/Mark-Lasfar/vercel/releases/download/v4.16.9-draftmode-fix/vercel-next-4.16.8.tgz"
+      "use": "https://github.com/Mark-Lasfar/vercel/releases/download/v4.16.9-draftmode-fix/vercel-next-4.16.8.tgz"
 
     }
   ]
