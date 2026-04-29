@@ -13,7 +13,7 @@ export default async function Home({
     params = await searchParams;
     console.log("In draft mode with search params: ", params);
   } else {
-    console.log("Not in draft mode");
+    console.log("Not in  draft mode");
   }
 
   return (
