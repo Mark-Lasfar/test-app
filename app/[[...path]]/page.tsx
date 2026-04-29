@@ -1,20 +1,30 @@
-import { draftMode } from "next/headers";
+import { draftMode, headers } from "next/headers";
 
-/** Add your relevant code here for the issue to reproduce */
 export default async function Home({
   searchParams,
 }: {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
+  // 🟢 ==== Lambda Entry Logging ====
+  console.log('[Lambda Entry] Start of page function');
+  const h = await headers();
+  console.log('[Lambda Entry] x-vercel-url:', h.get('x-vercel-url'));
+  console.log('[Lambda Entry] x-vercel-query:', h.get('x-vercel-query'));
+  console.log('[Lambda Entry] x-forwarded-query:', h.get('x-forwarded-query'));
+  console.log('[Lambda Entry] x-debug-searchparams:', h.get('x-debug-searchparams'));
+  // =================================
+
   const draft = await draftMode();
   let params = undefined;
 
   if (draft.isEnabled) {
     params = await searchParams;
-    console.log("In draft mode with search params: ", params);
+    console.log('[Page Handler] In draft mode with search params:', params);
   } else {
-    console.log("Not in  draft mode");
+    console.log('[Page Handler] Not in draft mode');
   }
+
+  console.log('[Page Handler] Final params sent to render:', params);
 
   return (
     <div>
@@ -26,11 +36,7 @@ export default async function Home({
 
 export const generateStaticParams = async () => {
   return [
-    {
-      path: [],
-    },
-    {
-      path: ["test"],
-    },
+    { path: [] },
+    { path: ["test"] },
   ];
 };
