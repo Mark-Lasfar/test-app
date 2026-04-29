@@ -1,31 +1,11 @@
 {
-  "buildCommand": "pnpm run build",
   "installCommand": "pnpm install",
-  "framework": "nextjs",
+  "buildCommand": "pnpm run build",
+  "framework": null,
   "builds": [
     {
       "src": "package.json",
-      "use": "https://github.com/Mark-Lasfar/vercel/releases/download/v4.16.9-draftmode-fix/vercel-next-4.16.8.tgz?nocache=1"
-    }
-  ],
-  "functions": {
-    "app/test/**/*.js": {
-      "runtime": "nodejs20.x"
-    }
-  },
-  "routes": [
-    {
-      "src": "/test",
-      "dest": "/test",
-      "headers": {
-        "Cache-Control": "no-cache, no-store, must-revalidate"
-      },
-      "has": [
-        {
-          "type": "cookie",
-          "key": "__prerender_bypass"
-        }
-      ]
+      "use": "https://github.com/Mark-Lasfar/vercel/releases/download/v4.16.9-draftmode-fix/vercel-next-4.16.8.tgz"
     }
   ]
 }
