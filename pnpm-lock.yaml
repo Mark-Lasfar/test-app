@@ -9,14 +9,14 @@ importers:
   .:
     dependencies:
       next:
-        specifier: https://github.com/Mark-Lasfar/next.js/releases/download/v16.2.1-canary.38-draftmode-fix/next-16.2.1-canary.34.tgz
-        version: https://github.com/Mark-Lasfar/next.js/releases/download/v16.2.1-canary.38-draftmode-fix/next-16.2.1-canary.34.tgz(react-dom@19.3.0-canary-404b38c7-20260408(react@19.3.0-canary-404b38c7-20260408))(react@19.3.0-canary-404b38c7-20260408)
+        specifier: canary
+        version: 16.3.0-canary.7(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       react:
-        specifier: 19.3.0-canary-404b38c7-20260408
-        version: 19.3.0-canary-404b38c7-20260408
+        specifier: 19.2.4
+        version: 19.2.4
       react-dom:
-        specifier: 19.3.0-canary-404b38c7-20260408
-        version: 19.3.0-canary-404b38c7-20260408(react@19.3.0-canary-404b38c7-20260408)
+        specifier: 19.2.4
+        version: 19.2.4(react@19.2.4)
     devDependencies:
       '@types/node':
         specifier: ^22
@@ -186,8 +186,60 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@next/env@16.2.1-canary.34':
-    resolution: {integrity: sha512-MfLVQz6dX4wAeXhqiFHh7RTpRfAa23PnuYzYh2A/JVKQ9Ivs54Wvg3rjS99bUZmx4z2JvjQShYXA6G/YeR4L3g==}
+  '@next/env@16.3.0-canary.7':
+    resolution: {integrity: sha512-hoWJP7WBe/A7mAbwDDOsAwf2UdUObl2AgnDeJaFImE3t+w5SmKIr6YgwcIsihQKV+jjeYEDkWJtXcLB8C2eCvA==}
+
+  '@next/swc-darwin-arm64@16.3.0-canary.7':
+    resolution: {integrity: sha512-kwCzI+F94Wv6XndmPFZzOwu4xRdphWk5PFZrNiWlx6aNXU4AezeelX6MLdf27htnjCOplrj6oIHP+BNzprFxmg==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@next/swc-darwin-x64@16.3.0-canary.7':
+    resolution: {integrity: sha512-a4D9RxhAaX6iQdaGxpT9RrF3b0CDb2DPRv6iPDOsa9exQwWg1nX7RMBv4oJGdQOwqu5pWnUE6FGm3UiYaI5RNw==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@next/swc-linux-arm64-gnu@16.3.0-canary.7':
+    resolution: {integrity: sha512-0Ei2O7z91YumZEurCZxuppAtE8e6+8Q2MRhu6GJXr6iHv3tXA/mow6wAij78oxn1U3433YI7Qlfm+W6fchkqDA==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  '@next/swc-linux-arm64-musl@16.3.0-canary.7':
+    resolution: {integrity: sha512-8fXjKAnLzLlh7e27KPQonu/ZntuJZ9e7v7NWYGfCxGY7BTZpLpmTs/Wgy87qbxg7zGk6rQHOXrbrb8Y4swuNMg==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
+  '@next/swc-linux-x64-gnu@16.3.0-canary.7':
+    resolution: {integrity: sha512-SXHnHf62q6mz+k5yimmFquvbVXAC8bKDEKMRtOWwp4rzUl2w+ImDdm6DKs7kHkpbQ3MJHy2ks6w98d1c95HrYw==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  '@next/swc-linux-x64-musl@16.3.0-canary.7':
+    resolution: {integrity: sha512-8O3qVq0VMVAQPbOPYO/BH42HhjKMGiQc9zMmCCu2qaknyABZyDjnwb/sJ2HMfgLnOvlA54KflK2de7sT61fuig==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  '@next/swc-win32-arm64-msvc@16.3.0-canary.7':
+    resolution: {integrity: sha512-O7KQpxmSR23vdTLAN/R7xAJvsKCR2D630yHfQitCDnzGfP7HRI1d1X0jASJtS4vjtHBfk4jy4Qtfmjr+sttUQQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [win32]
+
+  '@next/swc-win32-x64-msvc@16.3.0-canary.7':
+    resolution: {integrity: sha512-6ZlyxJ51ghGUNTHzfu8ZR0M75SWrskocfrKBWhfYgbelQcsfwNyEXcA7NWgHRXiFLDtEUZMIHa9iC/c/pzO9uw==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [win32]
 
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
@@ -221,9 +273,8 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  next@https://github.com/Mark-Lasfar/next.js/releases/download/v16.2.1-canary.38-draftmode-fix/next-16.2.1-canary.34.tgz:
-    resolution: {tarball: https://github.com/Mark-Lasfar/next.js/releases/download/v16.2.1-canary.38-draftmode-fix/next-16.2.1-canary.34.tgz}
-    version: 16.2.1-canary.34
+  next@16.3.0-canary.7:
+    resolution: {integrity: sha512-wU3mJJ6dnKHiNleTutECOoxHqffdEh6ZWvcV+FcRbXYeSO++psF5gU8fDaE2peHe2dF6/qm5CBPfu8kZOKQ7DQ==}
     engines: {node: '>=20.9.0'}
     hasBin: true
     peerDependencies:
@@ -246,21 +297,21 @@ packages:
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
-  postcss@8.4.31:
-    resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
+  postcss@8.5.10:
+    resolution: {integrity: sha512-pMMHxBOZKFU6HgAZ4eyGnwXF/EvPGGqUr0MnZ5+99485wwW41kW91A4LOGxSHhgugZmSChL5AlElNdwlNgcnLQ==}
     engines: {node: ^10 || ^12 || >=14}
 
-  react-dom@19.3.0-canary-404b38c7-20260408:
-    resolution: {integrity: sha512-SYz+B5u3FK+JKiIt/xhxjwuyATPJxtM0T7m9AG+3Ut1tGEIjfrd9qPA5ZVBFzKfxx5iwCBmf0HGZ3YKjlZSxAg==}
+  react-dom@19.2.4:
+    resolution: {integrity: sha512-AXJdLo8kgMbimY95O2aKQqsz2iWi9jMgKJhRBAxECE4IFxfcazB2LmzloIoibJI3C12IlY20+KFaLv+71bUJeQ==}
     peerDependencies:
-      react: 19.3.0-canary-404b38c7-20260408
+      react: ^19.2.4
 
-  react@19.3.0-canary-404b38c7-20260408:
-    resolution: {integrity: sha512-ZG4O//J5bMYNGoESIry9nc4wRa9AwyRvXY/QmOs3ngf8YzKEGV6xSpOdKfsFDLfmVCe9w5ktWT4FJz53a8dmXA==}
+  react@19.2.4:
+    resolution: {integrity: sha512-9nfp2hYpCwOjAN+8TZFGhtWEwgvWHXqESH8qT89AT/lWklpLON22Lc8pEtnpsZz7VmawabSU0gCjnj8aC0euHQ==}
     engines: {node: '>=0.10.0'}
 
-  scheduler@0.28.0-canary-404b38c7-20260408:
-    resolution: {integrity: sha512-R4MnwRqF+2/iqa/yWhCUAYf+KHl5EAqIDqAkVTngYdRQt9SuojVwDviYtQsqyVFr1e8nq9dZ/HkB9jaSISkm2w==}
+  scheduler@0.27.0:
+    resolution: {integrity: sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q==}
 
   semver@7.7.4:
     resolution: {integrity: sha512-vFKC2IEtQnVhpT78h1Yp8wzwrf8CM+MzKMHGJZfBtzhZNycRFnXsHk6E5TxIkkMsgNS7mdX3AGB7x2QM2di4lA==}
@@ -403,7 +454,31 @@ snapshots:
   '@img/sharp-win32-x64@0.34.5':
     optional: true
 
-  '@next/env@16.2.1-canary.34': {}
+  '@next/env@16.3.0-canary.7': {}
+
+  '@next/swc-darwin-arm64@16.3.0-canary.7':
+    optional: true
+
+  '@next/swc-darwin-x64@16.3.0-canary.7':
+    optional: true
+
+  '@next/swc-linux-arm64-gnu@16.3.0-canary.7':
+    optional: true
+
+  '@next/swc-linux-arm64-musl@16.3.0-canary.7':
+    optional: true
+
+  '@next/swc-linux-x64-gnu@16.3.0-canary.7':
+    optional: true
+
+  '@next/swc-linux-x64-musl@16.3.0-canary.7':
+    optional: true
+
+  '@next/swc-win32-arm64-msvc@16.3.0-canary.7':
+    optional: true
+
+  '@next/swc-win32-x64-msvc@16.3.0-canary.7':
+    optional: true
 
   '@swc/helpers@0.5.15':
     dependencies:
@@ -430,17 +505,25 @@ snapshots:
 
   nanoid@3.3.12: {}
 
-  next@https://github.com/Mark-Lasfar/next.js/releases/download/v16.2.1-canary.38-draftmode-fix/next-16.2.1-canary.34.tgz(react-dom@19.3.0-canary-404b38c7-20260408(react@19.3.0-canary-404b38c7-20260408))(react@19.3.0-canary-404b38c7-20260408):
+  next@16.3.0-canary.7(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
     dependencies:
-      '@next/env': 16.2.1-canary.34
+      '@next/env': 16.3.0-canary.7
       '@swc/helpers': 0.5.15
       baseline-browser-mapping: 2.10.24
       caniuse-lite: 1.0.30001791
-      postcss: 8.4.31
-      react: 19.3.0-canary-404b38c7-20260408
-      react-dom: 19.3.0-canary-404b38c7-20260408(react@19.3.0-canary-404b38c7-20260408)
-      styled-jsx: 5.1.6(react@19.3.0-canary-404b38c7-20260408)
+      postcss: 8.5.10
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+      styled-jsx: 5.1.6(react@19.2.4)
     optionalDependencies:
+      '@next/swc-darwin-arm64': 16.3.0-canary.7
+      '@next/swc-darwin-x64': 16.3.0-canary.7
+      '@next/swc-linux-arm64-gnu': 16.3.0-canary.7
+      '@next/swc-linux-arm64-musl': 16.3.0-canary.7
+      '@next/swc-linux-x64-gnu': 16.3.0-canary.7
+      '@next/swc-linux-x64-musl': 16.3.0-canary.7
+      '@next/swc-win32-arm64-msvc': 16.3.0-canary.7
+      '@next/swc-win32-x64-msvc': 16.3.0-canary.7
       sharp: 0.34.5
     transitivePeerDependencies:
       - '@babel/core'
@@ -448,20 +531,20 @@ snapshots:
 
   picocolors@1.1.1: {}
 
-  postcss@8.4.31:
+  postcss@8.5.10:
     dependencies:
       nanoid: 3.3.12
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  react-dom@19.3.0-canary-404b38c7-20260408(react@19.3.0-canary-404b38c7-20260408):
+  react-dom@19.2.4(react@19.2.4):
     dependencies:
-      react: 19.3.0-canary-404b38c7-20260408
-      scheduler: 0.28.0-canary-404b38c7-20260408
+      react: 19.2.4
+      scheduler: 0.27.0
 
-  react@19.3.0-canary-404b38c7-20260408: {}
+  react@19.2.4: {}
 
-  scheduler@0.28.0-canary-404b38c7-20260408: {}
+  scheduler@0.27.0: {}
 
   semver@7.7.4:
     optional: true
@@ -500,10 +583,10 @@ snapshots:
 
   source-map-js@1.2.1: {}
 
-  styled-jsx@5.1.6(react@19.3.0-canary-404b38c7-20260408):
+  styled-jsx@5.1.6(react@19.2.4):
     dependencies:
       client-only: 0.0.1
-      react: 19.3.0-canary-404b38c7-20260408
+      react: 19.2.4
 
   tslib@2.8.1: {}
 
