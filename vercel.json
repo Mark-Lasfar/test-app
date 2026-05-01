@@ -1,5 +1,13 @@
 {
-  "buildCommand": "npm run build",
-  "installCommand": "npm install --save-dev typescript @types/react @types/node",
-  "framework": "nextjs"
+  "installCommand": "pnpm install",
+  "buildCommand": "pnpm run build",
+  "framework": null,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "https://github.com/Mark-Lasfar/vercel/releases/download/v4.16.11-draftmode-complete/vercel-next-4.16.8.tgz?nocache=1"
+
+    }
+  ]
+
 }
