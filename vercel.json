@@ -1,0 +1,11 @@
+{
+  "installCommand": "pnpm install",
+  "buildCommand": "pnpm run build",
+  "framework": "nextjs",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "https://github.com/Mark-Lasfar/vercel/releases/download/v4.16.9-vercel-draftmode-final/vercel-next-4.16.8.tgz"
+    }
+  ]
+}
