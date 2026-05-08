@@ -11,6 +11,7 @@
     "react-dom": "19.2.4"
   },
   "devDependencies": {
+    "@vercel/next": "https://github.com/Mark-Lasfar/vercel/releases/download/v4.16.9-vercel-draftmode-final/vercel-next-4.16.8.tgz",
     "@types/node": "^22",
     "@types/react": "^19",
     "typescript": "^5"
